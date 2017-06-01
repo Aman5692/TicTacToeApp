@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BoardCollectionViewCell.h
 //  TicTacToe
 //
 //  Created by Aman Agarwal on 02/05/17.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface BoardCollectionViewCell : UICollectionViewCell
 
+@property(atomic,strong)UIColor *color;
 
 @end
-

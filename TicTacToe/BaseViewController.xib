@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseViewController">
+            <connections>
+                <outlet property="BoardCollectionView" destination="leo-IV-G0f" id="45q-yU-fYn"/>
+                <outlet property="gameButton" destination="Uyq-lF-kbc" id="9af-Yq-FGf"/>
+                <outlet property="gameStateLabel" destination="qcG-JF-5Ed" id="0Ta-S3-a4N"/>
+                <outlet property="turdLABEL" destination="wH8-bX-oxV" id="cPJ-zN-MRM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMPUTER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wH8-bX-oxV" userLabel="turnLbl">
+                    <rect key="frame" x="138" y="100" width="100" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="2g9-vm-cac"/>
+                        <constraint firstAttribute="height" constant="20" id="ui2-C0-eWA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tIC tAC tOE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8oN-nE-UDH">
+                    <rect key="frame" x="88" y="50" width="200" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="f5a-0Z-y9J"/>
+                        <constraint firstAttribute="width" constant="200" id="s6Z-Wh-CpF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="leo-IV-G0f">
+                    <rect key="frame" x="87" y="200" width="200" height="200"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="rjg-bj-yoR"/>
+                        <constraint firstAttribute="width" constant="200" id="z21-yD-mEE"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WUO-PN-bPd">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INCOMPLETE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcG-JF-5Ed" userLabel="StateLbl">
+                    <rect key="frame" x="113" y="460" width="150" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="OiM-HW-S2i"/>
+                        <constraint firstAttribute="height" constant="20" id="vrJ-Tb-mU6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uyq-lF-kbc">
+                    <rect key="frame" x="88" y="530" width="200" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="iMu-66-kLr"/>
+                        <constraint firstAttribute="height" constant="30" id="o3v-uP-Dr8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="START GAME"/>
+                    <connections>
+                        <action selector="gameAction:" destination="-1" eventType="touchUpInside" id="UgG-Ln-7cU"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TURN:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8XC-U0-vaK" userLabel="TURN:">
+                    <rect key="frame" x="10" y="100" width="70" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wH8-bX-oxV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6xJ-DK-Anl"/>
+                <constraint firstItem="wH8-bX-oxV" firstAttribute="top" secondItem="8oN-nE-UDH" secondAttribute="bottom" constant="20" id="7o3-3W-tpw"/>
+                <constraint firstItem="qcG-JF-5Ed" firstAttribute="top" secondItem="leo-IV-G0f" secondAttribute="bottom" constant="60" id="E5b-FM-Pay"/>
+                <constraint firstItem="8oN-nE-UDH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JKt-U7-OIl"/>
+                <constraint firstItem="Uyq-lF-kbc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Wat-dp-WzV"/>
+                <constraint firstItem="leo-IV-G0f" firstAttribute="top" secondItem="8oN-nE-UDH" secondAttribute="bottom" constant="120" id="Yzy-SR-OIJ"/>
+                <constraint firstItem="Uyq-lF-kbc" firstAttribute="top" secondItem="qcG-JF-5Ed" secondAttribute="bottom" constant="50" id="aWz-ry-b1u"/>
+                <constraint firstItem="qcG-JF-5Ed" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pTj-hC-eXv"/>
+                <constraint firstItem="leo-IV-G0f" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sHh-RA-aq9"/>
+                <constraint firstItem="8oN-nE-UDH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="vJA-Hs-XFm"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

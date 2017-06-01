@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		2124B35F1EB87C6300FB1BDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2124B35E1EB87C6300FB1BDA /* main.m */; };
 		2124B3621EB87C6300FB1BDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2124B3611EB87C6300FB1BDA /* AppDelegate.m */; };
-		2124B3651EB87C6300FB1BDA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2124B3641EB87C6300FB1BDA /* ViewController.m */; };
-		2124B3681EB87C6300FB1BDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2124B3661EB87C6300FB1BDA /* Main.storyboard */; };
 		2124B36B1EB87C6300FB1BDA /* TicTacToe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2124B3691EB87C6300FB1BDA /* TicTacToe.xcdatamodeld */; };
 		2124B36D1EB87C6300FB1BDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2124B36C1EB87C6300FB1BDA /* Assets.xcassets */; };
-		2124B3701EB87C6300FB1BDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2124B36E1EB87C6300FB1BDA /* LaunchScreen.storyboard */; };
+		2124B37A1EB87CFB00FB1BDA /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2124B3781EB87CFB00FB1BDA /* BaseViewController.m */; };
+		2124B37B1EB87CFB00FB1BDA /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2124B3791EB87CFB00FB1BDA /* BaseViewController.xib */; };
+		21AE59F51EB881EA001D0F9C /* BoardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AE59F31EB881EA001D0F9C /* BoardCollectionViewCell.m */; };
+		21AE59F61EB881EA001D0F9C /* BoardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21AE59F41EB881EA001D0F9C /* BoardCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +22,15 @@
 		2124B35E1EB87C6300FB1BDA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2124B3601EB87C6300FB1BDA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2124B3611EB87C6300FB1BDA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2124B3631EB87C6300FB1BDA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2124B3641EB87C6300FB1BDA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2124B3671EB87C6300FB1BDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2124B36A1EB87C6300FB1BDA /* TicTacToe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TicTacToe.xcdatamodel; sourceTree = "<group>"; };
 		2124B36C1EB87C6300FB1BDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2124B36F1EB87C6300FB1BDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2124B3711EB87C6300FB1BDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2124B3771EB87CFB00FB1BDA /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		2124B3781EB87CFB00FB1BDA /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		2124B3791EB87CFB00FB1BDA /* BaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
+		21AE59F21EB881EA001D0F9C /* BoardCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardCollectionViewCell.h; sourceTree = "<group>"; };
+		21AE59F31EB881EA001D0F9C /* BoardCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardCollectionViewCell.m; sourceTree = "<group>"; };
+		21AE59F41EB881EA001D0F9C /* BoardCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoardCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,14 +65,16 @@
 			children = (
 				2124B3601EB87C6300FB1BDA /* AppDelegate.h */,
 				2124B3611EB87C6300FB1BDA /* AppDelegate.m */,
-				2124B3631EB87C6300FB1BDA /* ViewController.h */,
-				2124B3641EB87C6300FB1BDA /* ViewController.m */,
-				2124B3661EB87C6300FB1BDA /* Main.storyboard */,
 				2124B36C1EB87C6300FB1BDA /* Assets.xcassets */,
-				2124B36E1EB87C6300FB1BDA /* LaunchScreen.storyboard */,
 				2124B3711EB87C6300FB1BDA /* Info.plist */,
 				2124B3691EB87C6300FB1BDA /* TicTacToe.xcdatamodeld */,
 				2124B35D1EB87C6300FB1BDA /* Supporting Files */,
+				2124B3771EB87CFB00FB1BDA /* BaseViewController.h */,
+				2124B3781EB87CFB00FB1BDA /* BaseViewController.m */,
+				2124B3791EB87CFB00FB1BDA /* BaseViewController.xib */,
+				21AE59F21EB881EA001D0F9C /* BoardCollectionViewCell.h */,
+				21AE59F31EB881EA001D0F9C /* BoardCollectionViewCell.m */,
+				21AE59F41EB881EA001D0F9C /* BoardCollectionViewCell.xib */,
 			);
 			path = TicTacToe;
 			sourceTree = "<group>";
@@ -141,9 +146,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2124B3701EB87C6300FB1BDA /* LaunchScreen.storyboard in Resources */,
 				2124B36D1EB87C6300FB1BDA /* Assets.xcassets in Resources */,
-				2124B3681EB87C6300FB1BDA /* Main.storyboard in Resources */,
+				21AE59F61EB881EA001D0F9C /* BoardCollectionViewCell.xib in Resources */,
+				2124B37B1EB87CFB00FB1BDA /* BaseViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,33 +159,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2124B3651EB87C6300FB1BDA /* ViewController.m in Sources */,
+				2124B37A1EB87CFB00FB1BDA /* BaseViewController.m in Sources */,
 				2124B3621EB87C6300FB1BDA /* AppDelegate.m in Sources */,
 				2124B36B1EB87C6300FB1BDA /* TicTacToe.xcdatamodeld in Sources */,
+				21AE59F51EB881EA001D0F9C /* BoardCollectionViewCell.m in Sources */,
 				2124B35F1EB87C6300FB1BDA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		2124B3661EB87C6300FB1BDA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2124B3671EB87C6300FB1BDA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2124B36E1EB87C6300FB1BDA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2124B36F1EB87C6300FB1BDA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2124B3721EB87C6300FB1BDA /* Debug */ = {
@@ -316,6 +303,7 @@
 				2124B3761EB87C6300FB1BDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
